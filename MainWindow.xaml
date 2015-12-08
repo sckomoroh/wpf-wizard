@@ -6,7 +6,7 @@
         x:Class="WizardTest.MainWindow"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <view:WizardContainer >
+        <view:WizardContainer  StatusBarVisible="True" StatusBarWidth="160">
             <view:WizardContainer.WizardPages>
                 <wizardPages:Wellcome />
                 <wizardPages:Page1 />

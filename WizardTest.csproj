@@ -54,7 +54,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="WizardContainer\Common\SimpleCommand.cs" />
-    <Compile Include="WizardContainer\ViewModel\TreeViewWizardItem.cs" />
+    <Compile Include="WizardContainer\View\WizardProperties.cs" />
     <Compile Include="WizardContainer\WizardPage\IPageViewModel.cs" />
     <Compile Include="WizardContainer\ViewModel\ContainerViewModel.cs" />
     <Compile Include="WizardContainer\View\WizardContainer.xaml.cs">
