@@ -1,0 +1,98 @@
+﻿<Window x:Class="CustomTreeWizard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:categories="clr-namespace:CustomTreeWizard.Categories"
+        xmlns:view="clr-namespace:CustomTreeWizard.WizardContainer.View"
+        xmlns:viewModel="clr-namespace:CustomTreeWizard.Pages.ViewModel"
+        Title="MainWindow" Height="350" Width="625">
+    <Grid>
+        <view:WizardContainer>
+            <view:WizardContainer.WizardCategoriesPages>
+                <categories:CategoryItem PageName="Category 1">
+                    <categories:CategoryItem.WizardCategoriesPages>
+                        <categories:PageItem PageName="Page 1">
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 2" >
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 3" >
+                            <Grid>
+                                <Grid.DataContext>
+                                    <viewModel:WellcomeViewModel />
+                                </Grid.DataContext>
+                                <TextBlock Text="Page 3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                    </categories:CategoryItem.WizardCategoriesPages>
+                </categories:CategoryItem>
+                <categories:CategoryItem PageName="Category 2">
+                    <categories:CategoryItem.WizardCategoriesPages>
+                        <categories:PageItem PageName="Page 1">
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 2" >
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 5" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 3" >
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 9" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                    </categories:CategoryItem.WizardCategoriesPages>
+                </categories:CategoryItem>
+                <categories:CategoryItem PageName="Category 3">
+                    <categories:CategoryItem.WizardCategoriesPages>
+                        <categories:PageItem PageName="Page 1">
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 2" >
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 8" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                        <categories:PageItem PageName="Page 3" >
+                            <categories:PageItem.DataContext>
+                                <viewModel:WellcomeViewModel />
+                            </categories:PageItem.DataContext>
+                            <Grid>
+                                <TextBlock Text="Page 7" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="28" />
+                            </Grid>
+                        </categories:PageItem>
+                    </categories:CategoryItem.WizardCategoriesPages>
+                </categories:CategoryItem>
+            </view:WizardContainer.WizardCategoriesPages>
+        </view:WizardContainer>
+    </Grid>
+</Window>

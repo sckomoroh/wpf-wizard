@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:WizardTest.WizardContainer.View"
+        xmlns:wizardPages="clr-namespace:WizardTest.WizardPages.View"
+        x:Class="WizardTest.MainWindow"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <view:WizardContainer  StatusBarVisible="True" StatusBarWidth="160">
+            <view:WizardContainer.WizardPages>
+                <wizardPages:Wellcome />
+                <wizardPages:Page1 />
+                <wizardPages:Page2 />
+                <wizardPages:Page3 />
+                <wizardPages:Finish />
+            </view:WizardContainer.WizardPages>
+        </view:WizardContainer>
+    </Grid>
+</Window>
